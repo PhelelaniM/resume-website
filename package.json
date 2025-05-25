@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "render-build": "./render-build.sh",
+    "render-start": "./render-start.sh"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
