@@ -3,8 +3,12 @@ services:
     name: resume-website
     env: node
     buildCommand: npm install --legacy-peer-deps && npm run build
-    startCommand: npm start
+    startCommand: npx next start
     envVars:
       - key: NODE_ENV
         value: production
+      - key: PORT
+        value: 10000
+      - key: RENDER_EXTERNAL_URL
+        value: ${RENDER_EXTERNAL_HOSTNAME}
     autoDeploy: true
