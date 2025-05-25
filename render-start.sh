@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Set the correct directory for Next.js to find the build files
-export NEXT_DIST_DIR=dist
+# Install serve if not already installed
+npm install -g serve
 
-# Start the Next.js application
-npx next start
+# Start a static file server for the 'out' directory
+npx serve -s out -p $PORT
